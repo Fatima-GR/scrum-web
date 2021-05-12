@@ -1,0 +1,151 @@
+/* generic style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  text-align: center; /*only applied on the front page*/
+  background-image: linear-gradient( 120deg, rgb(252, 213, 219), rgb(194, 243, 250));
+}
+
+/* Index page */
+.header-index {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 13.1rem;
+  background: #262626;
+}
+h1.scrum-heading {
+  padding: 2rem 0 4.3rem 0;
+  font-size: 2.7rem;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+}
+span {
+  color: hsl(180, 100%, 45%);
+}
+li {
+  display: inline-block;
+  width: 19rem;
+}
+li > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+li a:hover {
+  text-decoration: underline;
+}
+div.cover {
+  width: 100%;
+  height: auto;
+  margin-top: 12rem;
+}
+.cover img {
+  width: 100%;
+  height: 40vh;
+}
+h2.index-heading {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+section {
+  padding: 1rem;
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.5rem;
+}
+#video {
+  margin-top: 3.5rem;
+  margin-bottom: 10rem;
+}
+/* Team page */
+
+h1.roles-heading,
+h1.values-heading,
+h1.events-heading {
+  /*sharing style*/
+  padding-top: 2.6rem;
+  font-size: 2.3rem;
+  text-shadow: 2px 3px 2px grey;
+}
+div.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 6rem;
+}
+div.flex-container div {
+  padding: 0 20px 0 20px;
+}
+div.flex-container img {
+  width: 400px;
+  border-radius: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p.roles-paragr,
+p.values-paragr {
+  padding-top: 3.1rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-align: justify;
+  line-height: 2rem;
+}
+div.box-1,
+div.box-2,
+div.box-3 {
+  flex: 1;
+}
+/* Values page */
+p.values-paragr {
+  padding: 3.1rem 10rem 3.1rem 10rem;
+}
+.values-image img {
+  height: 60vh;
+  padding-bottom: 6rem;
+  filter: drop-shadow(2px 4px 6px black);
+  animation: drop 3s ease-out;
+}
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+  50% {
+    opacity: 0.1;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Events page */
+.cat img {
+  border-radius: 50%;
+  padding-top: 10rem;
+  animation: cat 8s infinite linear;
+}
+@keyframes cat {
+  0% {
+    transform: translateX(-1200px);
+  }
+
+  50% {
+    transform: translateX(1230px);
+  }
+  100% {
+    transform: translateX(-1200px);
+  }
+}
+code {
+  color: rgb(170, 11, 11);
+}
